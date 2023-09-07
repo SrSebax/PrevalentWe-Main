@@ -135,14 +135,14 @@ export const itemsMenuSidebarMobile = [
     iconCategory: 'ph',
     iconName: 'read-cv-logo',
     title: 'Experiencia Laboral',
-    path: '/Experiencia Laboral',
+    path: '/hitos/create',
   },
   {
     id: 5,
     iconCategory: 'ph',
     iconName: 'folder-user',
     title: 'Hito Personal',
-    path: '/Hitos Personales',
+    path: '/hitos/create_staff',
   },
 ];
 export const itemsMenuFooterTab = [

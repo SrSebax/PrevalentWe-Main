@@ -27,7 +27,7 @@ function Index() {
               <Icon icon='fa-solid:university' />
             </div>
             <div className='mt-5 font-bold text-blue-500'>
-              <Link href='###'>
+              <Link href='./academy'>
                 {' '}
                 <span>
                   {' '}
