@@ -6,6 +6,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 
 import { Icon } from '@iconify/react';
+import { FaEdit } from 'react-icons/fa';
 
 const timelineData = [
   {
@@ -26,14 +27,26 @@ const timelineData = [
     type: 'Tecnica Profesional de Sistemas en Programacion y Mantenimiento de Computadores',
     icon: 'fa-solid:check-double',
   },
+  
+  {
+    date: '2017 - 2018',
+    title: 'Inició en PrevalentWare',
+    type: 'Aprendiz SENA',
+    icon: 'fa-solid:suitcase',
+  },
+  {
+    date: '2017 - 2017',
+    title: 'Inicio en Sena',
+    type: 'Tecnologo en Analisis y Desarrollo en Sistemas de Información',
+    icon: 'fa-solid:university',
+  },
 ];
 
-// Ordenar por fecha de forma ascendente
-timelineData.sort((a, b) => {
-  const dateA = new Date(a.date.split(' - ')[0]);
-  const dateB = new Date(b.date.split(' - ')[0]);
-  return dateB - dateA;
-});
+// timelineData.sort((a, b) => {
+//   const dateA = new Date(a.date.split(' - ')[0]);
+//   const dateB = new Date(b.date.split(' - ')[0]);
+//   return dateB - dateA;
+// });
 
 const iconColors = {
   'fa-solid:university': '#facc15',
@@ -48,7 +61,7 @@ const TimeLineVertical = () => {
         {timelineData.map((item, index) => (
           <VerticalTimelineElement
             key={index}
-            className='vertical-timeline-element--work'
+            className='vertical-timeline-element--work relative'
             contentStyle={{
               background: index % 2 === 0 ? '#3498db' : '#fff',
               boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.3)',
@@ -65,6 +78,11 @@ const TimeLineVertical = () => {
           >
             <h3 className='vertical-timeline-element-title'>{item.title}</h3>
             <p>{item.type}</p>
+            <div className='absolute lg:top-2 right-2'>
+              <button className='font-normal'>
+                <Icon icon='tabler:edit' width={25} className='m-2' />
+              </button>
+            </div>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>
