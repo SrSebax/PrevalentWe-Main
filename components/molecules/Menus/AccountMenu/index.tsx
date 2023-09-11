@@ -40,9 +40,17 @@ function AccountMenu({
               </Link>
             </li>
             <li>
+              <Link href='admin/experience'>
+                <Text
+                  text='Admin Certificate'
+                  extraClassNames='account_menu__text_link'
+                />
+              </Link>
+            </li>
+            <li>
               <Link href='/account'>
                 <Text
-                  text='Account settings'
+                  text='Account Settings'
                   extraClassNames='account_menu__text_link'
                 />
               </Link>

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
+import TimeLineCV from './cv';
 
 function Index() {
   return (
@@ -10,7 +11,7 @@ function Index() {
         <title>PrevalentWe</title>
       </Head>
 
-      <div className='grid justify-center items-center mt-10'>
+      <div className='grid justify-center items-center my-10'>
         <div className='flex justify-center'>
           <h1 className='text-4xl  text-gray-700'>Mi CV</h1>
         </div>
@@ -66,6 +67,7 @@ function Index() {
           </div>
         </div>
       </div>
+      <TimeLineCV />
     </div>
   );
 }
