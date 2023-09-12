@@ -8,7 +8,7 @@
     }
 
     .sidebarMobile__container {
-        @apply py-5 h-full w-[80%] space-y-5 bg-gradient-to-b to-colorCyan via-black from-grey px-10;
+        @apply py-5 h-full w-[65%] space-y-5 bg-gradient-to-b to-colorCyan via-black from-grey px-5;
     }
 
     .menu {
@@ -16,7 +16,7 @@
     }
 
     .menu__container_image {
-        @apply relative h-28 w-[10rem] mb-10;
+        @apply relative h-[52px] w-[210px] mb-[60px];
     }
 
     .sidebarMobile__icon,

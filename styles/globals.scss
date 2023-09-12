@@ -190,3 +190,7 @@
     @apply grid grid-cols-2 lg:grid-cols-5 justify-between items-center gap-5;
   }
 }
+
+.vertical-timeline::before {
+  background: #969ca6 !important;
+}

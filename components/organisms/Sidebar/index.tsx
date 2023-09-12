@@ -77,7 +77,7 @@ function Sidebar() {
                   <span
                     className={
                       expandSidebar
-                        ? 'block w-56 animate-slide-right'
+                        ? 'block w-60 animate-slide-right'
                         : 'hidden'
                     }
                   >

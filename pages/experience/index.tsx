@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const data = [
   {
@@ -34,15 +34,33 @@ const data = [
 ];
 
 function Experience() {
+  const [filtro, setFiltro] = useState('');
+
+  const filteredData = data.filter((item) =>
+    item.tipo.toLowerCase().includes(filtro.toLowerCase())
+  );
+
   return (
-    <div className='overflow-x-auto p-16'>
-      <div className='mb-4'>
+    <div className='overflow-x-auto md:p-16 p-10'>
+      <p className='text-gray-500 lg:text-3xl font-semibold pb-3'>
+        Lista de certificados
+      </p>
+      <div className='md:flex items-center'>
         <a
           href='../academy'
-          className='bg-colorCyan text-white font-bold py-2 px-4 rounded inline-block'
+          className='bg-colorCyan text-white font-bold py-2 px-4 rounded-md md:w-1/5 mr-2 hover:bg-opacity-80 transition duration-300'
         >
           Agregar Certificado
         </a>
+        <div className='w-full my-4'>
+          <input
+            type='text'
+            placeholder='Filtrar por tipo...'
+            value={filtro}
+            onChange={(e) => setFiltro(e.target.value)}
+            className='border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:border-colorCyan'
+          />
+        </div>
       </div>
       <div className='shadow-lg'>
         <table className='w-full overflow-hidden border border-gray-200 shadow-md rounded'>
@@ -59,7 +77,7 @@ function Experience() {
             </tr>
           </thead>
           <tbody>
-            {data.map((item, index) => (
+            {filteredData.map((item, index) => (
               <tr key={index} className={index % 2 === 0 ? 'bg-gray-100' : ''}>
                 <td className='py-4 px-6 border-r border-gray-200'>
                   {item.tipo}

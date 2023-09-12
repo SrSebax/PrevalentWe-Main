@@ -75,7 +75,7 @@ function SidebarMobile({ open, setOpen }: SidebarMobileProps) {
           <div className='menu'>
             {/** Contenedor imagen */}
             <div className='menu__container_image'>
-              <Imagen src='/img/logos/favicon.ico' alt='Imagen Logotipo' />
+              <Imagen src='/img/logos/logoPrevalentWhite.png' alt='Imagen Logotipo' />
             </div>
             {/** Menu */}
             <div className='space-y-24'>
