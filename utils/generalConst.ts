@@ -37,6 +37,13 @@ export const itemsMenuSidebar = [
     title: 'Hito Personal',
     path: '/hitos/create_staff',
   },
+  {
+    id: 6,
+    iconCategory: 'fluent',
+    iconName: 'brain-circuit-20-regular',
+    title: 'Conocimientos',
+    path: '/mygrade/grade',
+  },
   // {
   //   id: 2,
   //   iconCategory: 'ph',
@@ -143,6 +150,13 @@ export const itemsMenuSidebarMobile = [
     iconName: 'folder-user',
     title: 'Hito Personal',
     path: '/hitos/create_staff',
+  },
+  {
+    id: 6,
+    iconCategory: 'fluent',
+    iconName: 'brain-circuit-20-regular',
+    title: 'Conocimientos',
+    path: '/mygrade/grade',
   },
 ];
 export const itemsMenuFooterTab = [
